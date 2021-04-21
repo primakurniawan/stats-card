@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 15px;
+  font-family: "Inter", "Lexend Deca", sans-serif;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #090b1a;
+}
+
+.stats {
+  max-width: 1100px;
+  margin: auto;
+  background-color: #1b1938;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media (min-width: 376px) {
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .stats > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
+.stats__img {
+  height: 240px;
+  width: 100%;
+  background-image: url("/images/image-header-mobile.jpg");
+  background-color: #aa5cdb;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px 5px 0 0;
+}
+
+@media (min-width: 376px) {
+  .stats__img {
+    background-image: url("/images/image-header-desktop.jpg");
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: inherit;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+.stats__text {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  line-height: 1.5;
+}
+
+.stats__text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.stats__text h1 span {
+  color: #aa5cdb;
+}
+
+.stats__text p {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.stats__text__items > div {
+  margin-top: 1rem;
+}
+
+.stats__text__items > div span {
+  display: block;
+}
+
+.stats__text__items > div span:first-child {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.stats__text__items > div span:last-child {
+  text-transform: uppercase;
+}
+
+@media (min-width: 376px) {
+  .stats__text__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
