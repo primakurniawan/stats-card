@@ -46,8 +46,8 @@ body {
 .stats__img {
   height: 240px;
   width: 100%;
-  background-image: url("/images/image-header-mobile.jpg");
-  background-color: #aa5cdb;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.5)), to(rgba(170, 92, 219, 0.5))), url("/images/image-header-mobile.jpg");
+  background: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url("/images/image-header-mobile.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 5px 5px 0 0;
@@ -55,7 +55,8 @@ body {
 
 @media (min-width: 376px) {
   .stats__img {
-    background-image: url("/images/image-header-desktop.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(170, 92, 219, 0.5)), to(rgba(170, 92, 219, 0.5))), url("/images/image-header-desktop.jpg");
+    background-image: linear-gradient(rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url("/images/image-header-desktop.jpg");
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
